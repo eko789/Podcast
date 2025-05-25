@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f0e6; /* Light cream background */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #4b0082; /* Indigo */
+    color: #f0e68c; /* Khaki */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 10px;
+}
+
+.button {
+    background-color: #ffd700; /* Gold */
+    color: #4b0082; /* Indigo */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #e6be00; /* Darker gold */
+    animation: pulse 1s infinite;
+}
+
+/* Main Section Styles */
+main {
+    margin-top: 20px;
+}
+
+.podcast-section {
+    background-color: #ffffff; /* White */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.podcast-section h2 {
+    margin-top: 0;
+    color: #4b0082; /* Indigo */
+}
+
+/* Podcast List Styles */
+.podcast-list-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.podcast-item {
+    background-color: #f8f9fa; /* Light gray */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.podcast-item:hover {
+    background-color: #e2e6ea; /* Slightly darker gray on hover */
+}
+
+.podcast-item.playing {
+    background-color: #d4af37; /* Gold background for playing item */
+    border: 2px solid #4b0082; /* Indigo border for playing item */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); /* Glow effect */
+}
+
+.podcast-item strong {
+    font-size: 1.2em;
+    color: #4b0082; /* Indigo for titles */
+}
+
+/* Audio Player Styles */
+.audio-player {
+    margin-left: 20px;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #6c757d; /* Muted gray */
+}
+
+/* Animation Styles */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+

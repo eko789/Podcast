@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Podcast Application</h1>
+        </header>
+
+        <main>
+            <section class="add-audio-section">
+                <h2>Add Audio from Music Folder</h2>
+                <form id="audioForm">
+                    <label for="audioSelect">Select Audio:</label>
+                    <select id="audioSelect">
+                        <option value="" disabled selected>Select an audio file</option>
+                        <option value="music/podcast1.mp3">Podcast 1</option>
+                        <option value="music/podcast2.mp3">Podcast 2</option>
+                        <option value="music/podcast3.mp3">Podcast 3</option>
+                        <option value="music/podcast4.mp3">Podcast 4</option>
+                        <option value="music/podcast5.mp3">Podcast 5</option>
+                        <option value="music/podcast6.mp3">Podcast 6</option>
+                        <option value="music/podcast7.mp3">Podcast 7</option>
+                        <option value="music/podcast8.mp3">Podcast 8</option>
+                        <option value="music/podcast9.mp3">Podcast 9</option>
+                        <option value="music/podcast10.mp3">Podcast 10</option>
+                        <option value="music/podcast11.mp3">Podcast 11</option>
+                        <option value="music/podcast12.mp3">Podcast 12</option>
+                        <option value="music/podcast13.mp3">Podcast 13</option>
+                        <option value="music/podcast14.mp3">Podcast 14</option>
+                        <option value="music/podcast15.mp3">Podcast 15</option>
+                        <option value="music/podcast16.mp3">Podcast 16</option>
+                        <option value="music/podcast17.mp3">Podcast 17</option>
+                        <option value="music/podcast18.mp3">Podcast 18</option>
+                        <option value="music/podcast19.mp3">Podcast 19</option>
+                        <option value="music/podcast20.mp3">Podcast 20</option>
+                    </select>
+                    <br>
+                    <label for="podcastTitle">Podcast Title:</label>
+                    <input type="text" id="podcastTitle" placeholder="Enter podcast title" required>
+                    <br>
+                    <button type="submit" class="button">Add Podcast</button>
+                </form>
+            </section>
+
+            <section class="search-section">
+                <h2>Search Podcasts</h2>
+                <input type="text" id="searchInput" onkeyup="searchPodcasts()" placeholder="Search for podcasts...">
+            </section>
+
+            <section class="podcast-list-section">
+                <h2>Podcast List</h2>
+                <ul id="podcastList" class="podcast-list-ul"></ul>
+            </section>
+
+            <section class="view-podcasts-section">
+                <h2>View Podcasts</h2>
+                <a href="view.html" class="button">Go to Podcast View</a>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2023 Podcast Application. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
